@@ -51,4 +51,13 @@ public partial class DetalleClientePage : ContentPage
     {
         ActualizarCliente();
     }
+
+    async void Regresar()
+    {
+        await Navigation.PushAsync(new ClientesPage(_servicioCliente));
+    }
+    private void Volver_Clicked(object sender, EventArgs e)
+    {
+        Regresar();
+    }
 }

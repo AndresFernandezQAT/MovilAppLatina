@@ -36,4 +36,13 @@ public partial class CrearClientePage : ContentPage
     {
         InsertarCliente();
     }
+
+    async void Regresar()
+    {
+        await Navigation.PushAsync(new ClientesPage(_servicioCliente));
+    }
+    private void Volver_Clicked(object sender, EventArgs e)
+    {
+        Regresar();
+    }
 }

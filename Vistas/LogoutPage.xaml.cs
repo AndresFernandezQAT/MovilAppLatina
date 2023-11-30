@@ -1,11 +1,14 @@
+using MovilApp.IServicios;
+
 namespace MovilApp.Vistas;
 
 public partial class LogoutPage : ContentPage
 {
-	public LogoutPage()
+   
+    public LogoutPage()
 	{
-		InitializeComponent();
-        SecureStorage.Remove("sesion");
-        Shell.Current.GoToAsync("login");
+		InitializeComponent();  
+        SecureStorage.Remove("sesion");    
+       Shell.Current.GoToAsync("login");
     }
 }
