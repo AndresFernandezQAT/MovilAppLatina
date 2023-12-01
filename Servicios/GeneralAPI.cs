@@ -6,8 +6,8 @@ namespace MovilApp.Servicios
     public class GeneralAPI : IGeneralAPI
     {
 
-        //static readonly string direccionbase = "http://10.0.2.2:5000";
-        static readonly string direccionbase = "http://192.168.100.8:5000"; //IP de cada m'aquina
+        //static readonly string direccionbase = "http://10.0.2.2:5000"; // cuando use el emulador
+        static readonly string direccionbase = "http://10.18.2.86:5000"; //IP de cada maquina cuando use dispositivo local
         static readonly string _url = $"{direccionbase}/api/";
 
         public  HttpClient GetHttpClient()
